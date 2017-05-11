@@ -1,0 +1,226 @@
+{
+	"name": "Pedidos",
+	"properties": {
+		"IdPedido": {
+			"type": "Number",
+			"required": true,
+			"length": null,
+			"precision": 10,
+			"scale": 0,
+			"id": 1,
+			"mysql": {
+				"columnName": "IdPedido",
+				"dataType": "int",
+				"dataLength": null,
+				"dataPrecision": 10,
+				"dataScale": 0,
+				"nullable": "N"
+			}
+		},
+		"IdCliente": {
+			"type": "String",
+			"required": false,
+			"length": 10,
+			"precision": null,
+			"scale": null,
+			"mysql": {
+				"columnName": "IdCliente",
+				"dataType": "varchar",
+				"dataLength": 10,
+				"dataPrecision": null,
+				"dataScale": null,
+				"nullable": "Y"
+			}
+		},
+		"IdEmpleado": {
+			"type": "Number",
+			"required": false,
+			"length": null,
+			"precision": 10,
+			"scale": 0,
+			"mysql": {
+				"columnName": "IdEmpleado",
+				"dataType": "int",
+				"dataLength": null,
+				"dataPrecision": 10,
+				"dataScale": 0,
+				"nullable": "Y"
+			}
+		},
+		"FechaPedido": {
+			"type": "Date",
+			"required": false,
+			"length": null,
+			"precision": null,
+			"scale": null,
+			"mysql": {
+				"columnName": "FechaPedido",
+				"dataType": "date",
+				"dataLength": null,
+				"dataPrecision": null,
+				"dataScale": null,
+				"nullable": "Y"
+			}
+		},
+		"FechaEntrega": {
+			"type": "Date",
+			"required": false,
+			"length": null,
+			"precision": null,
+			"scale": null,
+			"mysql": {
+				"columnName": "FechaEntrega",
+				"dataType": "date",
+				"dataLength": null,
+				"dataPrecision": null,
+				"dataScale": null,
+				"nullable": "Y"
+			}
+		},
+		"FechaEnvio": {
+			"type": "Date",
+			"required": false,
+			"length": null,
+			"precision": null,
+			"scale": null,
+			"mysql": {
+				"columnName": "FechaEnvio",
+				"dataType": "date",
+				"dataLength": null,
+				"dataPrecision": null,
+				"dataScale": null,
+				"nullable": "Y"
+			}
+		},
+		"FormaEnvio": {
+			"type": "Number",
+			"required": false,
+			"length": null,
+			"precision": 10,
+			"scale": 0,
+			"mysql": {
+				"columnName": "FormaEnvio",
+				"dataType": "int",
+				"dataLength": null,
+				"dataPrecision": 10,
+				"dataScale": 0,
+				"nullable": "Y"
+			}
+		},
+		"Cargo": {
+			"type": "Number",
+			"required": false,
+			"length": null,
+			"precision": 12,
+			"scale": null,
+			"mysql": {
+				"columnName": "Cargo",
+				"dataType": "float",
+				"dataLength": null,
+				"dataPrecision": 12,
+				"dataScale": null,
+				"nullable": "Y"
+			}
+		},
+		"Destinatario": {
+			"type": "String",
+			"required": false,
+			"length": 80,
+			"precision": null,
+			"scale": null,
+			"mysql": {
+				"columnName": "Destinatario",
+				"dataType": "varchar",
+				"dataLength": 80,
+				"dataPrecision": null,
+				"dataScale": null,
+				"nullable": "Y"
+			}
+		},
+		"DireccionDestinatario": {
+			"type": "String",
+			"required": false,
+			"length": 120,
+			"precision": null,
+			"scale": null,
+			"mysql": {
+				"columnName": "DireccionDestinatario",
+				"dataType": "varchar",
+				"dataLength": 120,
+				"dataPrecision": null,
+				"dataScale": null,
+				"nullable": "Y"
+			}
+		},
+		"CiudadDestinatario": {
+			"type": "String",
+			"required": false,
+			"length": 30,
+			"precision": null,
+			"scale": null,
+			"mysql": {
+				"columnName": "CiudadDestinatario",
+				"dataType": "varchar",
+				"dataLength": 30,
+				"dataPrecision": null,
+				"dataScale": null,
+				"nullable": "Y"
+			}
+		},
+		"RegionDestinatario": {
+			"type": "String",
+			"required": false,
+			"length": 30,
+			"precision": null,
+			"scale": null,
+			"mysql": {
+				"columnName": "RegionDestinatario",
+				"dataType": "varchar",
+				"dataLength": 30,
+				"dataPrecision": null,
+				"dataScale": null,
+				"nullable": "Y"
+			}
+		},
+		"CodPostalDestinatario": {
+			"type": "String",
+			"required": false,
+			"length": 20,
+			"precision": null,
+			"scale": null,
+			"mysql": {
+				"columnName": "CodPostalDestinatario",
+				"dataType": "varchar",
+				"dataLength": 20,
+				"dataPrecision": null,
+				"dataScale": null,
+				"nullable": "Y"
+			}
+		},
+		"PaisDestinatario": {
+			"type": "String",
+			"required": false,
+			"length": 30,
+			"precision": null,
+			"scale": null,
+			"mysql": {
+				"columnName": "PaisDestinatario",
+				"dataType": "varchar",
+				"dataLength": 30,
+				"dataPrecision": null,
+				"dataScale": null,
+				"nullable": "Y"
+			}
+		}
+	},
+	"settings": {
+		"strict": false,
+		"replaceOnPUT": true,
+		"idInjection": false,
+		"mysql": {
+			"schema": "Neptuno",
+			"table": "Pedidos"
+		},
+		"relations": {}
+	}
+}

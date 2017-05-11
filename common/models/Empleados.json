@@ -1,0 +1,301 @@
+{
+	"name": "Empleados",
+	"properties": {
+		"IdEmpleado": {
+			"type": "Number",
+			"required": true,
+			"length": null,
+			"precision": 10,
+			"scale": 0,
+			"id": 1,
+			"mysql": {
+				"columnName": "IdEmpleado",
+				"dataType": "int",
+				"dataLength": null,
+				"dataPrecision": 10,
+				"dataScale": 0,
+				"nullable": "N"
+			}
+		},
+		"Apellidos": {
+			"type": "String",
+			"required": false,
+			"length": 40,
+			"precision": null,
+			"scale": null,
+			"mysql": {
+				"columnName": "Apellidos",
+				"dataType": "varchar",
+				"dataLength": 40,
+				"dataPrecision": null,
+				"dataScale": null,
+				"nullable": "Y"
+			}
+		},
+		"Nombre": {
+			"type": "String",
+			"required": false,
+			"length": 20,
+			"precision": null,
+			"scale": null,
+			"mysql": {
+				"columnName": "Nombre",
+				"dataType": "varchar",
+				"dataLength": 20,
+				"dataPrecision": null,
+				"dataScale": null,
+				"nullable": "Y"
+			}
+		},
+		"Cargo": {
+			"type": "String",
+			"required": false,
+			"length": 60,
+			"precision": null,
+			"scale": null,
+			"mysql": {
+				"columnName": "Cargo",
+				"dataType": "varchar",
+				"dataLength": 60,
+				"dataPrecision": null,
+				"dataScale": null,
+				"nullable": "Y"
+			}
+		},
+		"Tratamiento": {
+			"type": "String",
+			"required": false,
+			"length": 50,
+			"precision": null,
+			"scale": null,
+			"mysql": {
+				"columnName": "Tratamiento",
+				"dataType": "varchar",
+				"dataLength": 50,
+				"dataPrecision": null,
+				"dataScale": null,
+				"nullable": "Y"
+			}
+		},
+		"FechaNacimiento": {
+			"type": "Date",
+			"required": false,
+			"length": null,
+			"precision": null,
+			"scale": null,
+			"mysql": {
+				"columnName": "FechaNacimiento",
+				"dataType": "date",
+				"dataLength": null,
+				"dataPrecision": null,
+				"dataScale": null,
+				"nullable": "Y"
+			}
+		},
+		"FechaContratacion": {
+			"type": "Date",
+			"required": false,
+			"length": null,
+			"precision": null,
+			"scale": null,
+			"mysql": {
+				"columnName": "FechaContratacion",
+				"dataType": "date",
+				"dataLength": null,
+				"dataPrecision": null,
+				"dataScale": null,
+				"nullable": "Y"
+			}
+		},
+		"Direccion": {
+			"type": "String",
+			"required": false,
+			"length": 120,
+			"precision": null,
+			"scale": null,
+			"mysql": {
+				"columnName": "Direccion",
+				"dataType": "varchar",
+				"dataLength": 120,
+				"dataPrecision": null,
+				"dataScale": null,
+				"nullable": "Y"
+			}
+		},
+		"Ciudad": {
+			"type": "String",
+			"required": false,
+			"length": 30,
+			"precision": null,
+			"scale": null,
+			"mysql": {
+				"columnName": "Ciudad",
+				"dataType": "varchar",
+				"dataLength": 30,
+				"dataPrecision": null,
+				"dataScale": null,
+				"nullable": "Y"
+			}
+		},
+		"Region": {
+			"type": "String",
+			"required": false,
+			"length": 30,
+			"precision": null,
+			"scale": null,
+			"mysql": {
+				"columnName": "Region",
+				"dataType": "varchar",
+				"dataLength": 30,
+				"dataPrecision": null,
+				"dataScale": null,
+				"nullable": "Y"
+			}
+		},
+		"CodPostal": {
+			"type": "String",
+			"required": false,
+			"length": 20,
+			"precision": null,
+			"scale": null,
+			"mysql": {
+				"columnName": "CodPostal",
+				"dataType": "varchar",
+				"dataLength": 20,
+				"dataPrecision": null,
+				"dataScale": null,
+				"nullable": "Y"
+			}
+		},
+		"Pais": {
+			"type": "String",
+			"required": false,
+			"length": 30,
+			"precision": null,
+			"scale": null,
+			"mysql": {
+				"columnName": "Pais",
+				"dataType": "varchar",
+				"dataLength": 30,
+				"dataPrecision": null,
+				"dataScale": null,
+				"nullable": "Y"
+			}
+		},
+		"TelDomicilio": {
+			"type": "String",
+			"required": false,
+			"length": 48,
+			"precision": null,
+			"scale": null,
+			"mysql": {
+				"columnName": "TelDomicilio",
+				"dataType": "varchar",
+				"dataLength": 48,
+				"dataPrecision": null,
+				"dataScale": null,
+				"nullable": "Y"
+			}
+		},
+		"Extension": {
+			"type": "String",
+			"required": false,
+			"length": 8,
+			"precision": null,
+			"scale": null,
+			"mysql": {
+				"columnName": "Extension",
+				"dataType": "varchar",
+				"dataLength": 8,
+				"dataPrecision": null,
+				"dataScale": null,
+				"nullable": "Y"
+			}
+		},
+		"Foto": {
+			"type": "String",
+			"required": false,
+			"length": 510,
+			"precision": null,
+			"scale": null,
+			"mysql": {
+				"columnName": "Foto",
+				"dataType": "varchar",
+				"dataLength": 510,
+				"dataPrecision": null,
+				"dataScale": null,
+				"nullable": "Y"
+			}
+		},
+		"Notas": {
+			"type": "String",
+			"required": false,
+			"length": 255,
+			"precision": null,
+			"scale": null,
+			"mysql": {
+				"columnName": "Notas",
+				"dataType": "tinytext",
+				"dataLength": 255,
+				"dataPrecision": null,
+				"dataScale": null,
+				"nullable": "Y"
+			}
+		},
+		"Jefe": {
+			"type": "Number",
+			"required": false,
+			"length": null,
+			"precision": 10,
+			"scale": 0,
+			"mysql": {
+				"columnName": "Jefe",
+				"dataType": "int",
+				"dataLength": null,
+				"dataPrecision": 10,
+				"dataScale": 0,
+				"nullable": "Y"
+			}
+		},
+		"Salario": {
+			"type": "Number",
+			"required": false,
+			"length": null,
+			"precision": 12,
+			"scale": null,
+			"mysql": {
+				"columnName": "Salario",
+				"dataType": "float",
+				"dataLength": null,
+				"dataPrecision": 12,
+				"dataScale": null,
+				"nullable": "Y"
+			}
+		},
+		"Comision": {
+			"type": "Number",
+			"required": false,
+			"length": null,
+			"precision": 10,
+			"scale": 0,
+			"mysql": {
+				"columnName": "Comision",
+				"dataType": "int",
+				"dataLength": null,
+				"dataPrecision": 10,
+				"dataScale": 0,
+				"nullable": "Y"
+			}
+		}
+	},
+	"settings": {
+		"strict": false,
+		"replaceOnPUT": true,
+		"idInjection": false,
+		"mysql": {
+			"schema": "Neptuno",
+			"table": "Empleados"
+		},
+		"relations": {}
+	}
+}

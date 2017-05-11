@@ -1,0 +1,56 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "Clientes": {
+    "dataSource": "db"
+  },
+  "CompanyEnvios": {
+    "dataSource": "db"
+  },
+  "DetallesPedidos": {
+    "dataSource": "db"
+  },
+  "Empleados": {
+    "dataSource": "db"
+  },
+  "Pedidos": {
+    "dataSource": "db"
+  },
+  "Productos": {
+    "dataSource": "db"
+  },
+  "Proveedores": {
+    "dataSource": "db"
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  }
+}

@@ -1,0 +1,61 @@
+{
+	"name": "CompanyEnvios",
+	"properties": {
+		"IdCompanyEnvios": {
+			"type": "Number",
+			"required": true,
+			"length": null,
+			"precision": 10,
+			"scale": 0,
+			"id": 1,
+			"mysql": {
+				"columnName": "IdCompanyEnvios",
+				"dataType": "int",
+				"dataLength": null,
+				"dataPrecision": 10,
+				"dataScale": 0,
+				"nullable": "N"
+			}
+		},
+		"NombreCompany": {
+			"type": "String",
+			"required": false,
+			"length": 80,
+			"precision": null,
+			"scale": null,
+			"mysql": {
+				"columnName": "NombreCompany",
+				"dataType": "varchar",
+				"dataLength": 80,
+				"dataPrecision": null,
+				"dataScale": null,
+				"nullable": "Y"
+			}
+		},
+		"Telefono": {
+			"type": "String",
+			"required": false,
+			"length": 48,
+			"precision": null,
+			"scale": null,
+			"mysql": {
+				"columnName": "Telefono",
+				"dataType": "varchar",
+				"dataLength": 48,
+				"dataPrecision": null,
+				"dataScale": null,
+				"nullable": "Y"
+			}
+		}
+	},
+	"settings": {
+		"strict": false,
+		"replaceOnPUT": true,
+		"idInjection": false,
+		"mysql": {
+			"schema": "Neptuno",
+			"table": "CompanyEnvios"
+		},
+		"relations": {}
+	}
+}
