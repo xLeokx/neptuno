@@ -1,166 +1,163 @@
 {
-	"name": "Productos",
-	"properties": {
-		"IdProducto": {
-			"type": "Number",
-			"required": true,
-			"length": null,
-			"precision": 10,
-			"scale": 0,
-			"id": 1,
-			"mysql": {
-				"columnName": "IdProducto",
-				"dataType": "int",
-				"dataLength": null,
-				"dataPrecision": 10,
-				"dataScale": 0,
-				"nullable": "N"
-			}
-		},
-		"NombreProducto": {
-			"type": "String",
-			"required": false,
-			"length": 80,
-			"precision": null,
-			"scale": null,
-			"mysql": {
-				"columnName": "NombreProducto",
-				"dataType": "varchar",
-				"dataLength": 80,
-				"dataPrecision": null,
-				"dataScale": null,
-				"nullable": "Y"
-			}
-		},
-		"IdProveedor": {
-			"type": "Number",
-			"required": false,
-			"length": null,
-			"precision": 10,
-			"scale": 0,
-			"mysql": {
-				"columnName": "IdProveedor",
-				"dataType": "int",
-				"dataLength": null,
-				"dataPrecision": 10,
-				"dataScale": 0,
-				"nullable": "Y"
-			}
-		},
-		"IdCategoria": {
-			"type": "Number",
-			"required": false,
-			"length": null,
-			"precision": 10,
-			"scale": 0,
-			"mysql": {
-				"columnName": "IdCategoria",
-				"dataType": "int",
-				"dataLength": null,
-				"dataPrecision": 10,
-				"dataScale": 0,
-				"nullable": "Y"
-			}
-		},
-		"CantidadPorUnidad": {
-			"type": "String",
-			"required": false,
-			"length": 40,
-			"precision": null,
-			"scale": null,
-			"mysql": {
-				"columnName": "CantidadPorUnidad",
-				"dataType": "varchar",
-				"dataLength": 40,
-				"dataPrecision": null,
-				"dataScale": null,
-				"nullable": "Y"
-			}
-		},
-		"PrecioUnidad": {
-			"type": "Number",
-			"required": false,
-			"length": null,
-			"precision": 12,
-			"scale": null,
-			"mysql": {
-				"columnName": "PrecioUnidad",
-				"dataType": "float",
-				"dataLength": null,
-				"dataPrecision": 12,
-				"dataScale": null,
-				"nullable": "Y"
-			}
-		},
-		"UnidadesEnExistencia": {
-			"type": "Number",
-			"required": false,
-			"length": null,
-			"precision": 10,
-			"scale": 0,
-			"mysql": {
-				"columnName": "UnidadesEnExistencia",
-				"dataType": "int",
-				"dataLength": null,
-				"dataPrecision": 10,
-				"dataScale": 0,
-				"nullable": "Y"
-			}
-		},
-		"UnidadesEnPedido": {
-			"type": "Number",
-			"required": false,
-			"length": null,
-			"precision": 10,
-			"scale": 0,
-			"mysql": {
-				"columnName": "UnidadesEnPedido",
-				"dataType": "int",
-				"dataLength": null,
-				"dataPrecision": 10,
-				"dataScale": 0,
-				"nullable": "Y"
-			}
-		},
-		"NivelNuevoPedido": {
-			"type": "Number",
-			"required": false,
-			"length": null,
-			"precision": 10,
-			"scale": 0,
-			"mysql": {
-				"columnName": "NivelNuevoPedido",
-				"dataType": "int",
-				"dataLength": null,
-				"dataPrecision": 10,
-				"dataScale": 0,
-				"nullable": "Y"
-			}
-		},
-		"Suspendido": {
-			"type": "Boolean",
-			"required": false,
-			"length": 1,
-			"precision": null,
-			"scale": null,
-			"mysql": {
-				"columnName": "Suspendido",
-				"dataType": "char",
-				"dataLength": 1,
-				"dataPrecision": null,
-				"dataScale": null,
-				"nullable": "Y"
-			}
-		}
-	},
-	"settings": {
-		"strict": false,
-		"replaceOnPUT": true,
-		"idInjection": false,
-		"mysql": {
-			"schema": "Neptuno",
-			"table": "Productos"
-		},
-		"relations": {}
-	}
+  "name": "Productos",
+  "settings": {
+    "strict": false,
+    "replaceOnPUT": true,
+    "idInjection": false,
+    "mysql": {
+      "schema": "Neptuno",
+      "table": "Productos"
+    },
+    "relations": {}
+  },
+  "properties": {
+    "IdProducto": {
+      "type": "Number",
+      "id": 1,
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "IdProducto",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "NombreProducto": {
+      "type": "String",
+      "required": false,
+      "length": 80,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "NombreProducto",
+        "dataType": "varchar",
+        "dataLength": 80,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "CantidadPorUnidad": {
+      "type": "String",
+      "required": false,
+      "length": 40,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "CantidadPorUnidad",
+        "dataType": "varchar",
+        "dataLength": 40,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "PrecioUnidad": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 12,
+      "scale": null,
+      "mysql": {
+        "columnName": "PrecioUnidad",
+        "dataType": "float",
+        "dataLength": null,
+        "dataPrecision": 12,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "UnidadesEnExistencia": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "UnidadesEnExistencia",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      }
+    },
+    "UnidadesEnPedido": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "UnidadesEnPedido",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      }
+    },
+    "NivelNuevoPedido": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "NivelNuevoPedido",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      }
+    },
+    "Suspendido": {
+      "type": "Boolean",
+      "required": false,
+      "length": 1,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "Suspendido",
+        "dataType": "char",
+        "dataLength": 1,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {
+    "proveedor": {
+      "type": "belongsTo",
+      "model": "Proveedores",
+      "foreignKey": "IdProveedor"
+    },
+    "categoria": {
+      "type": "belongsTo",
+      "model": "Categorias",
+      "foreignKey": "IdCategoria"
+    },
+    "pedidos": {
+      "type": "hasMany",
+      "model": "Pedidos",
+      "foreignKey": "IdProducto",
+      "through": "DetallesPedidos",
+      "keyThrough": "IdPedido"
+    },
+    "detallesPedidos": {
+      "type": "hasMany",
+      "model": "DetallesPedidos",
+      "foreignKey": "IdProducto"
+    }
+  },
+  "acls": [],
+  "methods": {}
 }

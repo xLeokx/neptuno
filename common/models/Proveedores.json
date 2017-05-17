@@ -1,196 +1,206 @@
 {
-	"name": "Proveedores",
-	"properties": {
-		"IdProveedor": {
-			"type": "Number",
-			"required": true,
-			"length": null,
-			"precision": 10,
-			"scale": 0,
-			"id": 1,
-			"mysql": {
-				"columnName": "IdProveedor",
-				"dataType": "int",
-				"dataLength": null,
-				"dataPrecision": 10,
-				"dataScale": 0,
-				"nullable": "N"
-			}
-		},
-		"NombreCompany": {
-			"type": "String",
-			"required": false,
-			"length": 80,
-			"precision": null,
-			"scale": null,
-			"mysql": {
-				"columnName": "NombreCompany",
-				"dataType": "varchar",
-				"dataLength": 80,
-				"dataPrecision": null,
-				"dataScale": null,
-				"nullable": "Y"
-			}
-		},
-		"NombreContacto": {
-			"type": "String",
-			"required": false,
-			"length": 60,
-			"precision": null,
-			"scale": null,
-			"mysql": {
-				"columnName": "NombreContacto",
-				"dataType": "varchar",
-				"dataLength": 60,
-				"dataPrecision": null,
-				"dataScale": null,
-				"nullable": "Y"
-			}
-		},
-		"CargoContacto": {
-			"type": "String",
-			"required": false,
-			"length": 60,
-			"precision": null,
-			"scale": null,
-			"mysql": {
-				"columnName": "CargoContacto",
-				"dataType": "varchar",
-				"dataLength": 60,
-				"dataPrecision": null,
-				"dataScale": null,
-				"nullable": "Y"
-			}
-		},
-		"Direccion": {
-			"type": "String",
-			"required": false,
-			"length": 120,
-			"precision": null,
-			"scale": null,
-			"mysql": {
-				"columnName": "Direccion",
-				"dataType": "varchar",
-				"dataLength": 120,
-				"dataPrecision": null,
-				"dataScale": null,
-				"nullable": "Y"
-			}
-		},
-		"Ciudad": {
-			"type": "String",
-			"required": false,
-			"length": 30,
-			"precision": null,
-			"scale": null,
-			"mysql": {
-				"columnName": "Ciudad",
-				"dataType": "varchar",
-				"dataLength": 30,
-				"dataPrecision": null,
-				"dataScale": null,
-				"nullable": "Y"
-			}
-		},
-		"Region": {
-			"type": "String",
-			"required": false,
-			"length": 30,
-			"precision": null,
-			"scale": null,
-			"mysql": {
-				"columnName": "Region",
-				"dataType": "varchar",
-				"dataLength": 30,
-				"dataPrecision": null,
-				"dataScale": null,
-				"nullable": "Y"
-			}
-		},
-		"CodPostal": {
-			"type": "String",
-			"required": false,
-			"length": 20,
-			"precision": null,
-			"scale": null,
-			"mysql": {
-				"columnName": "CodPostal",
-				"dataType": "varchar",
-				"dataLength": 20,
-				"dataPrecision": null,
-				"dataScale": null,
-				"nullable": "Y"
-			}
-		},
-		"Pais": {
-			"type": "String",
-			"required": false,
-			"length": 30,
-			"precision": null,
-			"scale": null,
-			"mysql": {
-				"columnName": "Pais",
-				"dataType": "varchar",
-				"dataLength": 30,
-				"dataPrecision": null,
-				"dataScale": null,
-				"nullable": "Y"
-			}
-		},
-		"Telefono": {
-			"type": "String",
-			"required": false,
-			"length": 48,
-			"precision": null,
-			"scale": null,
-			"mysql": {
-				"columnName": "Telefono",
-				"dataType": "varchar",
-				"dataLength": 48,
-				"dataPrecision": null,
-				"dataScale": null,
-				"nullable": "Y"
-			}
-		},
-		"Fax": {
-			"type": "String",
-			"required": false,
-			"length": 48,
-			"precision": null,
-			"scale": null,
-			"mysql": {
-				"columnName": "Fax",
-				"dataType": "varchar",
-				"dataLength": 48,
-				"dataPrecision": null,
-				"dataScale": null,
-				"nullable": "Y"
-			}
-		},
-		"PaginaPrincipal": {
-			"type": "String",
-			"required": false,
-			"length": 255,
-			"precision": null,
-			"scale": null,
-			"mysql": {
-				"columnName": "PaginaPrincipal",
-				"dataType": "tinytext",
-				"dataLength": 255,
-				"dataPrecision": null,
-				"dataScale": null,
-				"nullable": "Y"
-			}
-		}
-	},
-	"settings": {
-		"strict": false,
-		"replaceOnPUT": true,
-		"idInjection": false,
-		"mysql": {
-			"schema": "Neptuno",
-			"table": "Proveedores"
-		},
-		"relations": {}
-	}
+  "name": "Proveedores",
+  "settings": {
+    "strict": false,
+    "replaceOnPUT": true,
+    "idInjection": false,
+    "mysql": {
+      "schema": "Neptuno",
+      "table": "Proveedores"
+    },
+    "relations": {}
+  },
+  "properties": {
+    "IdProveedor": {
+      "type": "Number",
+      "id": 1,
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "IdProveedor",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "NombreCompany": {
+      "type": "String",
+      "required": false,
+      "length": 80,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "NombreCompany",
+        "dataType": "varchar",
+        "dataLength": 80,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "NombreContacto": {
+      "type": "String",
+      "required": false,
+      "length": 60,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "NombreContacto",
+        "dataType": "varchar",
+        "dataLength": 60,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "CargoContacto": {
+      "type": "String",
+      "required": false,
+      "length": 60,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "CargoContacto",
+        "dataType": "varchar",
+        "dataLength": 60,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "Direccion": {
+      "type": "String",
+      "required": false,
+      "length": 120,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "Direccion",
+        "dataType": "varchar",
+        "dataLength": 120,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "Ciudad": {
+      "type": "String",
+      "required": false,
+      "length": 30,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "Ciudad",
+        "dataType": "varchar",
+        "dataLength": 30,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "Region": {
+      "type": "String",
+      "required": false,
+      "length": 30,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "Region",
+        "dataType": "varchar",
+        "dataLength": 30,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "CodPostal": {
+      "type": "String",
+      "required": false,
+      "length": 20,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "CodPostal",
+        "dataType": "varchar",
+        "dataLength": 20,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "Pais": {
+      "type": "String",
+      "required": false,
+      "length": 30,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "Pais",
+        "dataType": "varchar",
+        "dataLength": 30,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "Telefono": {
+      "type": "String",
+      "required": false,
+      "length": 48,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "Telefono",
+        "dataType": "varchar",
+        "dataLength": 48,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "Fax": {
+      "type": "String",
+      "required": false,
+      "length": 48,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "Fax",
+        "dataType": "varchar",
+        "dataLength": 48,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "PaginaPrincipal": {
+      "type": "String",
+      "required": false,
+      "length": 255,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "PaginaPrincipal",
+        "dataType": "tinytext",
+        "dataLength": 255,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {
+    "productos": {
+      "type": "hasMany",
+      "model": "Productos",
+      "foreignKey": "IdProveedor"
+    }
+  },
+  "acls": [],
+  "methods": {}
 }

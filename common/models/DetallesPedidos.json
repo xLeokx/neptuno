@@ -1,92 +1,107 @@
 {
-	"name": "DetallesPedidos",
-	"properties": {
-		"IdPedido": {
-			"type": "Number",
-			"required": true,
-			"length": null,
-			"precision": 10,
-			"scale": 0,
-			"id": 1,
-			"mysql": {
-				"columnName": "IdPedido",
-				"dataType": "int",
-				"dataLength": null,
-				"dataPrecision": 10,
-				"dataScale": 0,
-				"nullable": "N"
-			}
-		},
-		"IdProducto": {
-			"type": "Number",
-			"required": true,
-			"length": null,
-			"precision": 10,
-			"scale": 0,
-			"id": 2,
-			"mysql": {
-				"columnName": "IdProducto",
-				"dataType": "int",
-				"dataLength": null,
-				"dataPrecision": 10,
-				"dataScale": 0,
-				"nullable": "N"
-			}
-		},
-		"PrecioUnidad": {
-			"type": "Number",
-			"required": false,
-			"length": null,
-			"precision": 12,
-			"scale": null,
-			"mysql": {
-				"columnName": "PrecioUnidad",
-				"dataType": "float",
-				"dataLength": null,
-				"dataPrecision": 12,
-				"dataScale": null,
-				"nullable": "Y"
-			}
-		},
-		"Cantidad": {
-			"type": "Number",
-			"required": false,
-			"length": null,
-			"precision": 10,
-			"scale": 0,
-			"mysql": {
-				"columnName": "Cantidad",
-				"dataType": "int",
-				"dataLength": null,
-				"dataPrecision": 10,
-				"dataScale": 0,
-				"nullable": "Y"
-			}
-		},
-		"Descuento": {
-			"type": "Number",
-			"required": false,
-			"length": null,
-			"precision": 12,
-			"scale": null,
-			"mysql": {
-				"columnName": "Descuento",
-				"dataType": "float",
-				"dataLength": null,
-				"dataPrecision": 12,
-				"dataScale": null,
-				"nullable": "Y"
-			}
-		}
-	},
-	"settings": {
-		"strict": false,
-		"replaceOnPUT": true,
-		"idInjection": false,
-		"mysql": {
-			"schema": "Neptuno",
-			"table": "DetallesPedidos"
-		},
-		"relations": {}
-	}
+  "name": "DetallesPedidos",
+  "settings": {
+    "strict": false,
+    "replaceOnPUT": true,
+    "idInjection": false,
+    "mysql": {
+      "schema": "Neptuno",
+      "table": "DetallesPedidos"
+    },
+    "relations": {}
+  },
+  "properties": {
+    "IdPedido": {
+      "type": "Number",
+      "id": 1,
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "IdPedido",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "IdProducto": {
+      "type": "Number",
+      "id": 2,
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "IdProducto",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "PrecioUnidad": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 12,
+      "scale": null,
+      "mysql": {
+        "columnName": "PrecioUnidad",
+        "dataType": "float",
+        "dataLength": null,
+        "dataPrecision": 12,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "Cantidad": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "Cantidad",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      }
+    },
+    "Descuento": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 12,
+      "scale": null,
+      "mysql": {
+        "columnName": "Descuento",
+        "dataType": "float",
+        "dataLength": null,
+        "dataPrecision": 12,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {
+    "producto": {
+      "type": "belongsTo",
+      "model": "Productos",
+      "foreignKey": "IdProducto"
+    },
+    "pedido": {
+      "type": "belongsTo",
+      "model": "Pedidos",
+      "foreignKey": "IdPedido"
+    }
+  },
+  "acls": [],
+  "methods": {}
 }

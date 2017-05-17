@@ -13,26 +13,29 @@
       "./mixins"
     ]
   },
+  "Categorias": {
+    "dataSource": "mysqlDs"
+  },
   "Clientes": {
-    "dataSource": "db"
+    "dataSource": "mysqlDs"
   },
   "CompanyEnvios": {
-    "dataSource": "db"
+    "dataSource": "mysqlDs"
   },
   "DetallesPedidos": {
-    "dataSource": "db"
+    "dataSource": "mysqlDs"
   },
   "Empleados": {
-    "dataSource": "db"
+    "dataSource": "mysqlDs"
   },
   "Pedidos": {
-    "dataSource": "db"
+    "dataSource": "mysqlDs"
   },
   "Productos": {
-    "dataSource": "db"
+    "dataSource": "mysqlDs"
   },
   "Proveedores": {
-    "dataSource": "db"
+    "dataSource": "mysqlDs"
   },
   "User": {
     "dataSource": "db"

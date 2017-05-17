@@ -1,17 +1,17 @@
 {
-  "name": "CompanyEnvios",
+  "name": "Categorias",
   "settings": {
     "strict": false,
     "replaceOnPUT": true,
     "idInjection": false,
     "mysql": {
       "schema": "Neptuno",
-      "table": "CompanyEnvios"
+      "table": "Clientes"
     },
     "relations": {}
   },
   "properties": {
-    "IdCompanyEnvios": {
+    "IdCategoria": {
       "type": "Number",
       "id": 1,
       "required": true,
@@ -19,7 +19,7 @@
       "precision": 10,
       "scale": 0,
       "mysql": {
-        "columnName": "IdCompanyEnvios",
+        "columnName": "IdCategoria",
         "dataType": "int",
         "dataLength": null,
         "dataPrecision": 10,
@@ -27,31 +27,46 @@
         "nullable": "N"
       }
     },
-    "NombreCompany": {
+    "NombreCategoria": {
       "type": "String",
       "required": false,
-      "length": 80,
+      "length": 30,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "NombreCompany",
+        "columnName": "NombreCategoria",
         "dataType": "varchar",
-        "dataLength": 80,
+        "dataLength": 30,
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "Y"
       }
     },
-    "Telefono": {
+    "Descripcion": {
       "type": "String",
       "required": false,
-      "length": 48,
+      "length": 255,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "Telefono",
+        "columnName": "Descripcion",
         "dataType": "varchar",
-        "dataLength": 48,
+        "dataLength": 255,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "Imagen": {
+      "type": "String",
+      "required": false,
+      "length": 255,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "Imagen",
+        "dataType": "varchar",
+        "dataLength": 255,
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "Y"
@@ -60,10 +75,10 @@
   },
   "validations": [],
   "relations": {
-    "pedidos": {
+    "productos": {
       "type": "hasMany",
-      "model": "Pedidos",
-      "foreignKey": "FormaEnvio"
+      "model": "Productos",
+      "foreignKey": "IdCategoria"
     }
   },
   "acls": [],
