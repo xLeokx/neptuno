@@ -1,5 +1,6 @@
 {
   "name": "Clientes",
+  "base": "User",
   "settings": {
     "strict": false,
     "replaceOnPUT": true,

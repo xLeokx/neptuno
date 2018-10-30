@@ -55,5 +55,9 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "Devoluciones": {
+    "dataSource": "mysqlDs",
+    "public": true
   }
 }
