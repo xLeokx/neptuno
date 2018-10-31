@@ -206,8 +206,51 @@
       "type": "belongsTo",
       "model": "Empleados",
       "foreignKey": "IdEmpleado"
+    },
+    "devoluciones": {
+      "type": "hasMany",
+      "model": "Devoluciones",
+      "foreignKey": ""
     }
   },
   "acls": [],
-  "methods": {}
+  "methods": {
+    "prototype.devolver": {
+      "accepts": [
+        {
+          "arg": "IdProducto",
+          "type": "number",
+          "required": true,
+          "description": "producto a devolver",
+          "http": {
+            "source": "query"
+          }
+        },
+        {
+          "arg": "Cantidad",
+          "type": "number",
+          "required": false,
+          "description": "",
+          "http": {
+            "source": "query"
+          }
+        }
+      ],
+      "returns": [
+        {
+          "arg": "devolucion",
+          "type": "object",
+          "root": false,
+          "description": "devolucion generada"
+        }
+      ],
+      "description": "devolvera cantidad y producto",
+      "http": [
+        {
+          "path": "/devolver",
+          "verb": "post"
+        }
+      ]
+    }
+  }
 }

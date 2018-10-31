@@ -156,6 +156,11 @@
       "type": "hasMany",
       "model": "DetallesPedidos",
       "foreignKey": "IdProducto"
+    },
+    "devoluciones": {
+      "type": "hasMany",
+      "model": "Devoluciones",
+      "foreignKey": ""
     }
   },
   "acls": [],

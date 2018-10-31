@@ -6,13 +6,24 @@
     "validateUpsert": true
   },
   "properties": {
-    "cantidad": {
+    "Cantidad": {
       "type": "number",
       "required": true
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "productos": {
+      "type": "belongsTo",
+      "model": "Productos",
+      "foreignKey": ""
+    },
+    "pedidos": {
+      "type": "belongsTo",
+      "model": "Pedidos",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }
