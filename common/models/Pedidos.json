@@ -192,7 +192,7 @@
       "model": "DetallesPedidos",
       "foreignKey": "IdPedido"
     },
-    "cliente": {
+    "cliente": { 
       "type": "belongsTo",
       "model": "Clientes",
       "foreignKey": "IdCliente"
@@ -213,7 +213,22 @@
       "foreignKey": ""
     }
   },
-  "acls": [],
+  "acls": [
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY",
+      "property": "devolver"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$owner",
+      "permission": "ALLOW",
+      "property": "devolver"
+    }
+  ],
   "methods": {
     "prototype.devolver": {
       "accepts": [
