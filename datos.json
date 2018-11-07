@@ -1,0 +1,18 @@
+{
+  "ids": {
+    "User": 1,
+    "AccessToken": 2,
+    "ACL": 1,
+    "RoleMapping": 1,
+    "Role": 1
+  },
+  "models": {
+    "User": {},
+    "AccessToken": {
+      "9rVPTs5ugUteSLkqexOXnTAAjBSmxvyhfmfreK5EtJU4XwbGsu0HRDHCg7TghEmc": "{\"id\":\"9rVPTs5ugUteSLkqexOXnTAAjBSmxvyhfmfreK5EtJU4XwbGsu0HRDHCg7TghEmc\",\"ttl\":1209600,\"created\":\"2018-11-07T12:44:04.087Z\",\"userId\":\"leok\"}"
+    },
+    "ACL": {},
+    "RoleMapping": {},
+    "Role": {}
+  }
+}

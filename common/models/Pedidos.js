@@ -5,6 +5,14 @@ module.exports = function (Pedidos) {
 
 
 
+    Pedidos.beforeRemote('create', function (context, pedido, next) {
+        context.args.data.FechaPedido = Date.now();
+        context.args.data.IdCliente = context.req.accessToken.userId;
+        next();
+    });
+
+
+
     Pedidos.beforeRemote('prototype.devolver',function(ctx, pedido, next) {
         //CTX INSTANCE  tiene valor de lo que nosotros enviamos en /devolver
         pedido=ctx.instance;
