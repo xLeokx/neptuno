@@ -1,0 +1,63 @@
+{
+  "name": "Comentarios",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "createdAt": {
+      "type": "date"
+    },
+    "texto": {
+      "type": "string"
+    },
+    "estrellas": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "clientes": {
+      "type": "belongsTo",
+      "model": "Clientes",
+      "foreignKey": ""
+    },
+    "productos": {
+      "type": "belongsTo",
+      "model": "Productos",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {
+    "misComentarios": {
+      "accepts": [
+        {
+          "arg": "ctx",
+          "type": "object",
+          "required": false,
+          "description": "",
+          "http": {
+            "source": "context"
+          }
+        }
+      ],
+      "returns": [
+        {
+          "arg": "coments",
+          "type": "array",
+          "root": false,
+          "description": ""
+        }
+      ],
+      "description": "",
+      "http": [
+        {
+          "path": "/misComentarios",
+          "verb": "get"
+        }
+      ]
+    }
+  }
+}

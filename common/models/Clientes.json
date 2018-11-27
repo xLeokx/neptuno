@@ -200,6 +200,17 @@
       "type": "hasMany",
       "model": "Pedidos",
       "foreignKey": "IdCliente"
+    },
+    "comentarios": {
+      "type": "hasMany",
+      "model": "Comentarios",
+      "foreignKey": ""
+    },
+    "productos": {
+      "type": "hasMany",
+      "model": "Productos",
+      "foreignKey": "",
+      "through": "Comentarios"
     }
   },
   "acls": [],

@@ -161,6 +161,17 @@
       "type": "hasMany",
       "model": "Devoluciones",
       "foreignKey": ""
+    },
+    "comentarios": {
+      "type": "hasMany",
+      "model": "Comentarios",
+      "foreignKey": ""
+    },
+    "clientes": {
+      "type": "hasMany",
+      "model": "Clientes",
+      "foreignKey": "",
+      "through": "Comentarios"
     }
   },
   "acls": [],

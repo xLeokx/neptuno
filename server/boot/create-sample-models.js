@@ -23,8 +23,21 @@ module.exports = function (app) {
       if (err) return cb(err);
     });
 
+
+
+    mysqlDs.automigrate('Comentarios', function (err) {
+      if (err) return cb(err);
+    });
+
+
+    mysqlDs.automigrate('Comentarios', function (err) {
+      if (err) return cb(err);
+    });
+
   };
- 
+  
+
+
 
   //create all models
 };

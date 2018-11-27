@@ -2,7 +2,7 @@
   "db": {
     "name": "db",
     "connector": "memory",
-    "file":"datos.json"
+    "file": "datos.json"
   },
   "mysqlDs": {
     "host": "localhost",

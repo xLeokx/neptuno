@@ -59,5 +59,9 @@
   "Devoluciones": {
     "dataSource": "mysqlDs",
     "public": true
+  },
+  "Comentarios": {
+    "dataSource": "mysqlDs",
+    "public": true
   }
 }
